@@ -122,12 +122,12 @@ make it inline-block
 
 
 */
-p{
+/* p{
     display: inline;
     width: 100px;
     height: 100px;
     background-color: red;
-}
+} */
 /* look here we can't increase width and height */
 a{
     /* bydefault its inline */
@@ -140,7 +140,7 @@ now it can move any where and it can shadow anything
 we have three element now frist become absolute it raise on layer 1 and so on 
 
 */
-/* #car1{
+#car1{
     width: 100px;
     height: 140px;
     background-color: red;
@@ -156,9 +156,9 @@ we have three element now frist become absolute it raise on layer 1 and so on
     width: 105px;
     height: 90px;
     background-color: rgb(38, 0, 255);
-} */
+}
 
-/* 
+
 #box{
     width: 300px;
     height: 300px;
@@ -169,7 +169,7 @@ we have three element now frist become absolute it raise on layer 1 and so on
     width: 100px;
     height: 100px;
     background-color: yellow;
-} */
+}
 
 /* FlexBox
  1. flexbox children pe nahi parenet pe lagti he and flexbox ka kaam children ko agal bagal lana he 
@@ -180,3 +180,69 @@ we have three element now frist become absolute it raise on layer 1 and so on
 
 
 */
+#box{
+    display: flex;
+    justify-content: center; 
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+#child1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 218, 7);
+}
+#child2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(4, 255, 0);
+}
+#child3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30, 0, 255);
+}
+/* 
+har element ke paas ek possibility hoti hai ki wo elements chahe to inactive do after and before 
+naam ki properties ko activate kar sakta he 
+
+har tah ke paas before and after hota hi he 
+*/
+p{
+    width: fit-content;
+    position: relative;
+}
+P::before{
+    /* this key activate your code */
+    content: '';
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+
+
+}
+P::after{
+    content: '<';
+}
+P::first-line{
+    font-style: italic;
+}
+P::first-letter{
+    font-size: larger;
+}
+P::selection{
+    color: green;
+}
+
+h5:hover{
+    color: blueviolet;
+
+}
+button:active{
+    color: red;
+}
+input:focus{
+    background-color: black;
+}
