@@ -7,9 +7,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
-h1{
-    margin-left: 10rem;
-}
+
 
 .divelement{
 width: 300px;
@@ -129,10 +127,12 @@ make it inline-block
     background-color: red;
 } */
 /* look here we can't increase width and height */
+
 a{
     /* bydefault its inline */
     display: block;
 }
+
 /* Positions */
 /* we are looking website from top view always 
 if somthing postion absolute this means it pick up from that place 
@@ -140,7 +140,7 @@ now it can move any where and it can shadow anything
 we have three element now frist become absolute it raise on layer 1 and so on 
 
 */
-#car1{
+/* #car1{
     width: 100px;
     height: 140px;
     background-color: red;
@@ -169,7 +169,7 @@ we have three element now frist become absolute it raise on layer 1 and so on
     width: 100px;
     height: 100px;
     background-color: yellow;
-}
+} */
 
 /* FlexBox
  1. flexbox children pe nahi parenet pe lagti he and flexbox ka kaam children ko agal bagal lana he 
@@ -180,7 +180,7 @@ we have three element now frist become absolute it raise on layer 1 and so on
 
 
 */
-#box{
+/* #box{
     display: flex;
     justify-content: center; 
     width: 300px;
@@ -201,20 +201,20 @@ we have three element now frist become absolute it raise on layer 1 and so on
     width: 50px;
     height: 50px;
     background-color: rgb(30, 0, 255);
-}
+} */
 /* 
 har element ke paas ek possibility hoti hai ki wo elements chahe to inactive do after and before 
 naam ki properties ko activate kar sakta he 
 
 har tah ke paas before and after hota hi he 
 */
-p{
+/* p{
     width: fit-content;
     position: relative;
-}
-P::before{
+} */
+/* P::before{ */
     /* this key activate your code */
-    content: '';
+    /* content: '';
     top: 50%;
     position: absolute;
     width: 100%;
@@ -245,4 +245,50 @@ button:active{
 }
 input:focus{
     background-color: black;
+} */
+
+/* #nav{
+    
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%; 
+    align-items: center;
+    height: 100px;
+    justify-items: center;
+     
+}
+#nav h2{
+    justify-self: start;
+} */
+/* grid 
+inside the itms or inside block you want to center the things then you need to make 
+align-items :center
+justify-items :center
+
+
+2. if you want o work inside complete block and want things 
+align-content 
+justify-content
+*/
+
+#box{
+    display: flex;
+    justify-content: center; 
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+#child1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 218, 7);
+}
+#child2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(4, 255, 0);
+}
+#child3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30, 0, 255);
 }
